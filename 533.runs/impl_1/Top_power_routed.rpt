@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Dec  5 17:51:10 2020
+| Date             : Sat Dec  5 18:44:21 2020
 | Host             : DESKTOP-RTHS3DT running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
 | Design           : Top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 47.246 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 46.987 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 46.449                           |
+| Dynamic (W)              | 46.190                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     3.511 |     1424 |       --- |             --- |
-|   LUT as Logic |     3.167 |      813 |     63400 |            1.28 |
-|   CARRY4       |     0.210 |       45 |     15850 |            0.28 |
-|   Register     |     0.077 |      247 |    126800 |            0.19 |
-|   F7/F8 Muxes  |     0.039 |      188 |     63400 |            0.30 |
+| Slice Logic    |     3.462 |     1426 |       --- |             --- |
+|   LUT as Logic |     3.123 |      817 |     63400 |            1.29 |
+|   CARRY4       |     0.208 |       45 |     15850 |            0.28 |
+|   Register     |     0.074 |      247 |    126800 |            0.19 |
+|   F7/F8 Muxes  |     0.038 |      185 |     63400 |            0.29 |
 |   BUFG         |     0.018 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       27 |       --- |             --- |
-| Signals        |     3.804 |      917 |       --- |             --- |
-| I/O            |    39.134 |       59 |       210 |           28.10 |
+| Signals        |     3.854 |      927 |       --- |             --- |
+| I/O            |    38.874 |       59 |       210 |           28.10 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    47.246 |          |           |                 |
+| Total          |    46.987 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     7.962 |       7.399 |      0.563 |
-| Vccaux    |       1.800 |     1.524 |       1.431 |      0.093 |
-| Vcco33    |       3.300 |    11.057 |      11.053 |      0.004 |
+| Vccint    |       1.000 |     7.962 |       7.400 |      0.563 |
+| Vccaux    |       1.800 |     1.514 |       1.421 |      0.093 |
+| Vcco33    |       3.300 |    10.983 |      10.979 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,22 +139,22 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| Top        |    46.449 |
-|   alu      |     2.929 |
-|   scr      |     1.378 |
-|   ssc      |     1.297 |
-|     cdd    |     0.207 |
-|     digit0 |     0.046 |
-|     digit1 |     0.047 |
+| Top        |    46.190 |
+|   alu      |     2.905 |
+|   scr      |     1.389 |
+|   ssc      |     1.333 |
+|     cdd    |     0.225 |
+|     digit0 |     0.044 |
+|     digit1 |     0.043 |
 |     digit2 |     0.046 |
-|     digit3 |     0.049 |
-|     digit4 |     0.081 |
+|     digit3 |     0.047 |
+|     digit4 |     0.076 |
 |     digit5 |     0.082 |
 |     digit6 |     0.055 |
 |     digit7 |     0.042 |
-|   vga      |     0.307 |
+|   vga      |     0.321 |
 |     fr     |     0.040 |
-|   vr       |     0.364 |
+|   vr       |     0.349 |
 +------------+-----------+
 
 
