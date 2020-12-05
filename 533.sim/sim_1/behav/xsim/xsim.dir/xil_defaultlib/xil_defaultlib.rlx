@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/tim_c/Documents/Vivado/533/533.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/tim_c/Documents/Vivado/533/533.srcs/sim_1/new/aluTB.v,1607210849,systemVerilog,,C:/Users/tim_c/Documents/Vivado/533/533.srcs/sim_1/new/simTop.v,,AluTB,,,,,,,,
+C:/Users/tim_c/Documents/Vivado/533/533.srcs/sim_1/new/simTop.v,1607202036,systemVerilog,,,,simTop,,,,,,,,
+C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/new/ALU.sv,1607210713,systemVerilog,,C:/Users/tim_c/Documents/Vivado/533/533.srcs/sim_1/new/aluTB.v,,ALU,,,,,,,,
