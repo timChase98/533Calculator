@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Dec  5 22:55:48 2020
+| Date             : Sun Dec  6 15:55:04 2020
 | Host             : DESKTOP-RTHS3DT running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
 | Design           : Top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 49.924 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 49.912 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 49.128                           |
+| Dynamic (W)              | 49.115                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     4.336 |     1500 |       --- |             --- |
-|   LUT as Logic |     3.874 |      883 |     63400 |            1.39 |
+| Slice Logic    |     4.315 |     1489 |       --- |             --- |
+|   LUT as Logic |     3.853 |      878 |     63400 |            1.38 |
 |   CARRY4       |     0.339 |       66 |     15850 |            0.42 |
 |   Register     |     0.075 |      247 |    126800 |            0.19 |
-|   F7/F8 Muxes  |     0.032 |      174 |     63400 |            0.27 |
+|   F7/F8 Muxes  |     0.031 |      170 |     63400 |            0.27 |
 |   BUFG         |     0.018 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       27 |       --- |             --- |
-| Signals        |     4.800 |     1015 |       --- |             --- |
-| I/O            |    39.992 |       59 |       210 |           28.10 |
+| Signals        |     4.802 |     1016 |       --- |             --- |
+| I/O            |    39.998 |       59 |       210 |           28.10 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    49.924 |          |           |                 |
+| Total          |    49.912 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     9.783 |       9.220 |      0.563 |
-| Vccaux    |       1.800 |     1.555 |       1.462 |      0.093 |
-| Vcco33    |       3.300 |    11.299 |      11.295 |      0.004 |
+| Vccint    |       1.000 |     9.764 |       9.202 |      0.563 |
+| Vccaux    |       1.800 |     1.555 |       1.463 |      0.093 |
+| Vcco33    |       3.300 |    11.301 |      11.297 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,9 +139,9 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| Top        |    49.128 |
+| Top        |    49.115 |
 |   alu      |     4.487 |
-|   scr      |     1.612 |
+|   scr      |     1.630 |
 |   ssc      |     1.248 |
 |     cdd    |     0.194 |
 |     digit0 |     0.046 |
@@ -152,9 +152,9 @@ Table of Contents
 |     digit5 |     0.066 |
 |     digit6 |     0.050 |
 |     digit7 |     0.044 |
-|   vga      |     0.324 |
-|     fr     |     0.043 |
-|   vr       |     0.393 |
+|   vga      |     0.322 |
+|     fr     |     0.041 |
+|   vr       |     0.360 |
 +------------+-----------+
 
 

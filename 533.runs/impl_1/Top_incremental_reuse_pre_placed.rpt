@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Dec  5 22:55:24 2020
+| Date         : Sun Dec  6 15:54:38 2020
 | Host         : DESKTOP-RTHS3DT running 64-bit major release  (build 9200)
 | Command      : report_incremental_reuse -file Top_incremental_reuse_pre_placed.rpt
 | Design       : Top
@@ -24,9 +24,9 @@ Table of Contents
 +-------+----------------------+--------------------+--------------------+-------+
 |  Type | Matched % (of Total) | Reuse % (of Total) | Fixed % (of Total) | Total |
 +-------+----------------------+--------------------+--------------------+-------+
-| Cells |                98.36 |              90.86 |               3.85 |  1532 |
-| Nets  |                99.88 |              85.85 |               0.00 |   933 |
-| Pins  |                    - |              82.49 |                  - |  6347 |
+| Cells |                97.37 |              87.90 |               3.87 |  1521 |
+| Nets  |               100.00 |              81.13 |               0.00 |   938 |
+| Pins  |                    - |              75.71 |                  - |  6321 |
 | Ports |               100.00 |             100.00 |             100.00 |    59 |
 +-------+----------------------+--------------------+--------------------+-------+
 
@@ -60,7 +60,7 @@ Table of Contents
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| synth_design    |             |             |       00:03 |       00:02 |       00:02 |       00:02 |
+| synth_design    |             |             |       00:02 |       00:02 |       00:02 |       00:02 |
 | opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 | read_checkpoint |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -72,11 +72,12 @@ Table of Contents
 +------------------------------------------------------+-------+
 |                         Type                         |   %   |
 +------------------------------------------------------+-------+
-| Non-Reused Cells                                     |  9.13 |
-|   New                                                |  1.56 |
-|   Discarded illegal placement due to netlist changes |  7.57 |
-| Partially reused nets                                |  2.14 |
-| Non-Reused nets                                      | 12.00 |
+| Non-Reused Cells                                     | 12.09 |
+|   New                                                |  2.43 |
+|   Discarded illegal placement due to netlist changes |  9.33 |
+|   Discarded to improve timing                        |  0.32 |
+| Partially reused nets                                |  2.66 |
+| Non-Reused nets                                      | 16.20 |
 | Non-Reused Ports                                     |  0.00 |
 +------------------------------------------------------+-------+
 

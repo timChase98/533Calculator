@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -79,7 +80,7 @@ set rc [catch {
   set_property ip_output_repo C:/Users/tim_c/Documents/Vivado/533/533.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/tim_c/Documents/Vivado/533/533.runs/synth_1/Top.dcp
-  read_xdc C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/constrs_1/new/io.xdc
+  read_xdc C:/Users/tim_c/Documents/Vivado/533/533.srcs/constrs_1/imports/new/io.xdc
   link_design -top Top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

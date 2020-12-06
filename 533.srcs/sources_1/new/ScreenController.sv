@@ -22,7 +22,6 @@
 
 module ScreenController(
 	input logic clk,
-	input logic go,
 	input logic [7:0] alua,
 	input logic [7:0] alub,
 	input logic [3:0] opcode,

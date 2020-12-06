@@ -69,7 +69,7 @@ module Top(
 
     SevenSegmentController ssc (sevenSegValue, clockDiv[21], clockDiv[16], an, ca);
     VgaController vga (clockDiv[1], r, g, b, hsync, vsync, vramXAddressR, vramYAddressR, vramQ);
-    ScreenController scr (screenClk, clockDiv[30], aluA, aluB, opCode, aluR, aluNumOps, aluST, vramXAddressW, vramYAddressW, vramD, vramL);
+    ScreenController scr (screenClk, aluA, aluB, opCode, aluR, aluNumOps, aluST, vramXAddressW, vramYAddressW, vramD, vramL);
     ALU alu (aluA, aluB, opCode, aluR, aluNumOps);
 
     vram vr (vramXAddressW, vramYAddressW, vramXAddressR, vramYAddressR, vramD, vramL, vramQ);

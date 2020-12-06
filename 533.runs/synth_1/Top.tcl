@@ -20,6 +20,7 @@ proc create_report { reportName command } {
 set_param chipscope.maxJobs 1
 set_param synth.incrementalSynthesisCache C:/Users/tim_c/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6824-DESKTOP-RTHS3DT/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -37,14 +38,14 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/new/ALU.sv
   C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/new/ScreenController.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/SevenSegDecoder.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/SevenSegmentController.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/VgaController.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/decoder3_8.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/vram.sv
-  C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/Top.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/SevenSegDecoder.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/SevenSegmentController.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/VgaController.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/decoder3_8.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/vram.sv
+  C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/Top.sv
 }
-read_vhdl -library xil_defaultlib C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/sources_1/new/FontRom.vhd
+read_vhdl -library xil_defaultlib C:/Users/tim_c/Documents/Vivado/533/533.srcs/sources_1/imports/new/FontRom.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -53,8 +54,8 @@ read_vhdl -library xil_defaultlib C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/constrs_1/new/io.xdc
-set_property used_in_implementation false [get_files C:/Users/tim_c/Documents/Vivado/533Alu/533Alu.srcs/constrs_1/new/io.xdc]
+read_xdc C:/Users/tim_c/Documents/Vivado/533/533.srcs/constrs_1/imports/new/io.xdc
+set_property used_in_implementation false [get_files C:/Users/tim_c/Documents/Vivado/533/533.srcs/constrs_1/imports/new/io.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
