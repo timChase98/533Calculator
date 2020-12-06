@@ -91,49 +91,63 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/SevenSegDecoder.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/SevenSegDecoder.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/SevenSegDecoder.sv"/>
+        <Attr Name="ImportTime" Val="1605917896"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/SevenSegmentController.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/SevenSegmentController.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/SevenSegmentController.sv"/>
+        <Attr Name="ImportTime" Val="1605917866"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/VgaController.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/VgaController.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/VgaController.sv"/>
+        <Attr Name="ImportTime" Val="1607040809"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/decoder3_8.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/decoder3_8.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/decoder3_8.sv"/>
+        <Attr Name="ImportTime" Val="1605917877"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/vram.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/vram.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/vram.sv"/>
+        <Attr Name="ImportTime" Val="1607226695"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/FontRom.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/new/FontRom.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/FontRom.vhd"/>
+        <Attr Name="ImportTime" Val="1607067545"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/Top.sv">
+    <File Path="$PSRCDIR/sources_1/imports/new/Top.sv">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/sources_1/new/Top.sv"/>
+        <Attr Name="ImportTime" Val="1607064394"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -147,8 +161,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../533Alu/533Alu.srcs/constrs_1/new/io.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/new/io.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../533Alu/533Alu.srcs/constrs_1/new/io.xdc"/>
+        <Attr Name="ImportTime" Val="1607054182"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
