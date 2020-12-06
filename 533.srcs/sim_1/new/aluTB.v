@@ -63,6 +63,8 @@ program automatic AluTB(
         #1; B=8'H08; OP=4'b1000; result=16'HAA00; #1; checkResults;
         // AA >> 8 = 00
         #1; OP=4'b1001; result=16'H0000; #1; checkResults;
+        // AA mod 8 = 2
+        # 1 OP=4'B1010; result=16'H0002; #1 checkResults;
         // 08! = d40320 = H9D80
         #1; A=8'H08; OP=4'b1111; result=16'H9d80; #1; checkResults;
         // 09! = d362,880 = H58980 this overflows our 16 bit register so we display 0 instead

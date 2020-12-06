@@ -42,7 +42,7 @@ module ALU(
 			4'h7: R <= A ^ B; // xor
 			4'h8: R <= A << B;// left shift
 			4'h9: R <= A >> B;// right shift
-			4'hA: R <= 16'H0000;
+			4'hA: R <= A % B; // mod
 			4'hB: R <= 16'H0000;
 			4'hC: R <= 16'H0000;
 			4'hD: R <= 16'H0000;
@@ -61,7 +61,7 @@ module ALU(
 			4'h7: numops <= 1; // xor
 			4'h8: numops <= 1; // left shift
 			4'h9: numops <= 1; // right shift
-			4'hA: numops <= 1;
+			4'hA: numops <= 1; // mod
 			4'hB: numops <= 1;
 			4'hC: numops <= 1;
 			4'hD: numops <= 1;

@@ -80,7 +80,7 @@ module ScreenController(
            4'H7: opchar <= 7'H5e; // ^
            4'H8: opchar <= 7'H3c; // <
            4'H9: opchar <= 7'H3e; // >
-           4'HA: opchar <= 7'H7F; //
+           4'HA: opchar <= 7'H25; // %
            4'HB: opchar <= 7'H7F; //
            4'HC: opchar <= 7'H7F; //
            4'HD: opchar <= 7'H7F; //
